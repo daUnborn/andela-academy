@@ -8,7 +8,7 @@ mongoose = require("mongoose");
 
 
 //APP CONFIG
-mongoose.connect("mongodb://localhost/student_enrollment_app");
+mongoose.connect("mongodb://admin:admin@ds249025.mlab.com:49025/student_enrollment_app");
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
