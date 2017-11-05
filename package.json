@@ -1,0 +1,20 @@
+{
+  "name": "andelaacademy",
+  "version": "1.0.0",
+  "description": "This is an assessment test for entry into Andela Learning Community. Going to the fun. I hope I get in",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+, "start": "nodemon app.js"
+   },
+  "keywords": [
+    "Andela",
+    "Learning",
+    "Community",
+    "API",
+    "Node.js",
+    "Students"
+  ],
+  "author": "Chimaroke Amaike",
+  "license": "ISC"
+}

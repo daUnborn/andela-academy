@@ -1,0 +1,37 @@
+<% include ./partials/header %>
+
+<div>
+<div class="ui main text container">
+	<div class="ui huge header segment">Andela Students Profiles</div>
+	<div class="ui top attached segment">
+		<div class="ui divided items">
+			<% students.forEach(function(student){ %>
+				<div class="item">
+					<div class="image">
+						<img src="<%= student.image %>">
+					</div>
+					<div class="content">
+						<a class="header" href="/students/<%= student._id %>"><%= student.studentID %></a>
+						<div class="meta">
+							<span><%= student.regDate.toDateString() %></span>
+						</div>
+						<div class="description">
+							<p><b><%= student.firstName%> <%- student.surname%></b></p>
+							<p><%= student.sex%></p>
+							<p><%= student.age %></p>
+							<p><%= student.programLanguage%></p>
+						</div>
+						<div class="extra">
+							<a class="ui floated basic violet button" href="/students/<%= student._id %>">
+								More Details
+								<i class= "right chevron icon"></i>
+							</a>
+						</div>	
+					</div>			
+				</div>
+			<% }); %>
+		</div>
+	</div>
+</div>
+
+<% include ./partials/footer %>
