@@ -35,14 +35,14 @@ var studentSchema = new mongoose.Schema({
 
 var Student = mongoose.model("Student", studentSchema);
 
-Student.create({
-	studentID: "20170511001",
-	firstName: "Chimaroke",
-	surname: "Amaike",
-	sex: "Male",
-	age: "24",
-	programLanguage: "Python"
-})
+// Student.create({
+// 	studentID: "20170511001",
+// 	firstName: "Chimaroke",
+// 	surname: "Amaike",
+// 	sex: "Male",
+// 	age: "24",
+// 	programLanguage: "Python"
+// })
 //RESTFUL ROUTES
 
 app.get("/", function(req, res){
